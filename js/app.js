@@ -14,3 +14,17 @@ function showSlides() {
   setTimeout(showSlides, 6000)
 }
 //End//
+var myDate = new Date();
+var hrs = myDate.getHours();
+
+var greet;
+
+if (hrs < 12)
+    greet = 'Good Morning and welcome to my portfolio!';
+else if (hrs >= 12 && hrs <= 17)
+    greet = 'Good Afternoon and welcome to my portfolio!';
+else if (hrs >= 17 && hrs <= 24)
+    greet = 'Good Evening and welcome to my portfolio!';
+
+document.getElementById('lblGreetings').innerHTML =
+    '<b>' + greet + '</b>';
