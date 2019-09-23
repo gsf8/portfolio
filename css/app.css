@@ -1,5 +1,17 @@
-.proof{border:1px solid red;}
+html {
+    background: #e6e9e9;
+     height: 100%;
+
+}
 body{
+  background: #fff;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+     color: #545454;
+     font-size: 16px;
+     line-height: 1.5;
+     margin: 0 auto;
+     max-width: 800px;
+     padding: 2em 2em 8em;
 
 }
 
@@ -10,7 +22,7 @@ a {
 
 nav{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 20px;
 }
 
@@ -48,7 +60,7 @@ font-family: 'Fira Sans', sans-serif;
   /*Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 
 .slideshow-container {
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -136,7 +148,5 @@ form {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   font-size: 20;
-}
-.form {
-  border-style: solid;
+   padding: 2em 2em 8em;
 }
