@@ -1,134 +1,128 @@
-
-
-
-
-
-.box{
-  position: static 0;
-  margin-left:auto;
+.box {
+  position: static;
+  margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  border-style: solid;
+  border-color: black;
   width: calc(576px/2);
-  height:288px;
-  background-image:url("../Images/selfie-01.png");
+  height: 288px;
+  background-image: url("../Images/selfie-01.png");
   animation: animate 1s steps(2) infinite;
-
 }
-@keyframes animate
-{
+
+@keyframes animate {
   from {
     background-position: 0;
   }
+
   to {
     background-position: 576px;
   }
 }
 
-
 /*coding from https://codepen.io/joshnh/pen/paxbE*/
 figure {
   position: relative;
-    height: 200px;
-    margin: 1.5em;
-    width: 300px;
-    float:left;
-    -webkit-transform: perspective(500);
-    -webkit-transform-style: preserve-3d;
-    -webkit-transition: .5s;
-}
-figure:hover {
-    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
-}
-img {
-    background-color: #222;
-    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
-    display: block;
-    height: 100%;
-    -webkit-transition: .5s;
-}
-figure:hover img {
-    box-shadow: none;
-}
-figcaption {
-    background-color: gray;
-    color: #fff;
-    height: 130px;
-    padding: 1.5em;
-    -webkit-transform: rotateX(-90deg);
-    -webkit-transform-origin: 150% 0;
-    -webkit-transition: .5s;
-}
-figure:hover figcaption {
-    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
-}
-h3 {
-    font-weight: bold;
-}
-h3 {
-    font-weight: bold;
+  height: 200px;
+  margin: 1.5em;
+  width: 300px;
+  float: left;
+  -webkit-transform: perspective(500);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: .5s;
 }
 
+figure:hover {
+  -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+
+img {
+  background-color: #222;
+  box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, .25);
+  display: block;
+  height: 100%;
+  -webkit-transition: .5s;
+}
+
+figure:hover img {
+  box-shadow: none;
+}
+
+figcaption {
+  background-color: gray;
+  color: #fff;
+  height: 130px;
+  padding: 1.5em;
+  -webkit-transform: rotateX(-90deg);
+  -webkit-transform-origin: 150% 0;
+  -webkit-transition: .5s;
+}
+
+figure:hover figcaption {
+  box-shadow: 0 20px 15px -10px hsla(0, 0%, 0%, .25);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
 
 html {
-    background: #e6e9e9;
-
+  background: #e6e9e9;
 }
-body{
-  background: #fff;
-     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-     color: #545454;
-     font-size: 16px;
-     line-height: 1.5;
-     margin: 0 auto;
-     max-width: 800px;
-     padding: 2em 2em 8em;
-     height: 900px;
 
+body {
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+  color: #545454;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2em 2em 8em;
+  height: 900px;
 }
 
 a {
   color: black;
-
 }
 
-nav{
+nav {
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
   font-family: 'Fira Sans', sans-serif;
 }
 
-h5{
+h5 {
   padding-bottom: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    line-height: 1.3;
-    text-align: center;
-    font-family: 'Fira Sans', sans-serif;
-
-
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.logo  {
+.logo {
   padding-bottom: 15px;
   position: relative;
-height: 100%;
-    width: 30%;
-    max-width: 200px;
+  height: 100%;
+  width: 30%;
+  max-width: 200px;
+}
 
-  }
+#lblGreetings {
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
 
-
-  #lblGreetings {
-text-align: center;
-font-family: 'Fira Sans', sans-serif;
- }
-
-
-  /*Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
-
+/*Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 .slideshow-container {
   max-width: 400px;
   position: relative;
@@ -138,11 +132,7 @@ font-family: 'Fira Sans', sans-serif;
 
 .mySlides {
   display: none;
-
-
 }
-
-
 
 .dot {
   cursor: pointer;
@@ -159,7 +149,6 @@ font-family: 'Fira Sans', sans-serif;
   background-color: #717171;
 }
 
-
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -168,32 +157,32 @@ font-family: 'Fira Sans', sans-serif;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
+
 /*End*/
 
-.selfportrait{
-  max-width: 400px;
-  width: 50%;
-  border-radius: 100%;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 15px;
-}
-
- p {
+p {
   text-align: center;
 }
 
-.work{
+.work {
   text-align: left;
   margin-bottom: 50px;
   margin-left: auto;
@@ -202,11 +191,10 @@ font-family: 'Fira Sans', sans-serif;
   max-width: 8000px;
 }
 
-.art{
+.art {
   display: block;
   width: 100%;
   max-width: 800px;
-
 }
 
 form {
@@ -216,32 +204,33 @@ form {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
-   padding: 2em 2em 8em;
+  padding: 2em 2em 8em;
 }
+
 /*coding from https://www.w3schools.com/css/css3_transitions.asp*/
-.submit{
-width:100px;
- height:40px;
- background:gray;
- color:#ffffff;
- position:absolute;
- font-weight:bold;
- font-size:15px;
-float:left;
--webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
--o-transition-property:width,height,-o-transform,background,font-size,opacity;
--o-transition-duration:1s,1s,1s,1s,1s,1s;
--moz-transition-property:width,height,-o-transform,background,font-size,opacity;
--moz-transition-duration:1s,1s,1s,1s,1s,1s;
-transition-property:width,height,transform,background,font-size,opacity;
-transition-duration:1s,1s,1s,1s,1s,1s;
-opacity:0.4;
+.submit {
+  width: 100px;
+  height: 40px;
+  background: gray;
+  color: #ffffff;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  float: left;
+  -webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+  -o-transition-property: width, height, -o-transform, background, font-size, opacity;
+  -o-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+  -moz-transition-property: width, height, -o-transform, background, font-size, opacity;
+  -moz-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+  transition-property: width, height, transform, background, font-size, opacity;
+  transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+  opacity: 0.4;
 }
-.submit:hover
-{
-opacity:1;
-background:black;
-width:200px;
-height:80px;
-font-size:35px;
+
+.submit:hover {
+  opacity: 1;
+  background: black;
+  width: 200px;
+  height: 80px;
+  font-size: 35px;
 }
