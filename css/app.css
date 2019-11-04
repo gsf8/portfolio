@@ -1,21 +1,76 @@
-.path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 100;
-  animation: dash 5s linear alternate infinite;
-}
 
-@keyframes dash {
+
+
+
+
+.box{
+  position: static 0;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: calc(576px/2);
+  height:288px;
+  background-image:url("../Images/selfie-01.png");
+  animation: animate 1s steps(2) infinite;
+
+}
+@keyframes animate
+{
   from {
-    stroke-dashoffset: 1000;
+    background-position: 0;
   }
   to {
-    stroke-dashoffset: 0;
+    background-position: 576px;
   }
 }
+
+
+/*coding from https://codepen.io/joshnh/pen/paxbE*/
+figure {
+  position: relative;
+    height: 200px;
+    margin: 1.5em;
+    width: 300px;
+    float:left;
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+figure:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+    display: block;
+    height: 100%;
+    -webkit-transition: .5s;
+}
+figure:hover img {
+    box-shadow: none;
+}
+figcaption {
+    background-color: gray;
+    color: #fff;
+    height: 130px;
+    padding: 1.5em;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 150% 0;
+    -webkit-transition: .5s;
+}
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+h3 {
+    font-weight: bold;
+}
+h3 {
+    font-weight: bold;
+}
+
 
 html {
     background: #e6e9e9;
-     height: 100%;
 
 }
 body{
@@ -27,6 +82,7 @@ body{
      margin: 0 auto;
      max-width: 800px;
      padding: 2em 2em 8em;
+     height: 900px;
 
 }
 
@@ -143,14 +199,12 @@ font-family: 'Fira Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 8000px;
 }
 
 .art{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  width: 100%;
   max-width: 800px;
 
 }
@@ -163,4 +217,31 @@ form {
   font-weight: 600;
   font-size: 20px;
    padding: 2em 2em 8em;
+}
+/*coding from https://www.w3schools.com/css/css3_transitions.asp*/
+.submit{
+width:100px;
+ height:40px;
+ background:gray;
+ color:#ffffff;
+ position:absolute;
+ font-weight:bold;
+ font-size:15px;
+float:left;
+-webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+-o-transition-property:width,height,-o-transform,background,font-size,opacity;
+-o-transition-duration:1s,1s,1s,1s,1s,1s;
+-moz-transition-property:width,height,-o-transform,background,font-size,opacity;
+-moz-transition-duration:1s,1s,1s,1s,1s,1s;
+transition-property:width,height,transform,background,font-size,opacity;
+transition-duration:1s,1s,1s,1s,1s,1s;
+opacity:0.4;
+}
+.submit:hover
+{
+opacity:1;
+background:black;
+width:200px;
+height:80px;
+font-size:35px;
 }
