@@ -29,7 +29,7 @@ else if (hrs >= 17 && hrs <= 24)
 document.getElementById('lblGreetings').innerHTML =
     '<b>' + greet + '</b>';
 
-    
+
     // portfolio
      $('.gallery ul li a').click(function() {
          var itemID = $(this).attr('href');
