@@ -1,3 +1,10 @@
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 .interlock{
   box-shadow: none;
   margin-left: auto;
@@ -144,7 +151,7 @@ h2 {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -5px;
+  margin-bottom: 0px;
   font-family: 'Fira Sans', sans-serif;
 }
 
